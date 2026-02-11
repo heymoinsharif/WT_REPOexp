@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>College Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 420px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>College Registration Form</h2>
+
+    <form>
+        <label>Student Name</label>
+        <input type="text" placeholder="Enter full name" required>
+
+        <label>USN</label>
+        <input type="text" placeholder="Enter USN" required>
+
+        <label>Branch</label>
+        <select required>
+            <option value="">Select Branch</option>
+            <option>CSE</option>
+            <option>ISE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>ME</option>
+            <option>CE</option>
+        </select>
+
+        <label>Semester</label>
+        <div class="radio-group">
+            <input type="radio" name="semester" required> 1
+            <input type="radio" name="semester"> 2
+            <input type="radio" name="semester"> 3
+            <input type="radio" name="semester"> 4
+            <input type="radio" name="semester"> 5
+            <input type="radio" name="semester"> 6
+            <input type="radio" name="semester"> 7
+            <input type="radio" name="semester"> 8
+        </div>
+
+        <br>
+
+        <label>Subjects Enrolled</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Mathematics  
+            <input type="checkbox"> Data Structures  
+            <input type="checkbox"> DBMS  
+            <input type="checkbox"> Operating Systems  
+        </div>
+
+        <br><br>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
